@@ -14,10 +14,10 @@ const Table = () => {
 
     return (
         <div>
-            <h2 className="text-center font-bold text-4xl text-black pt-10">Table of 2</h2>
+            <h2 className="text-center font-bold sm:text-4xl text-2xl text-black pt-10">Table of 2</h2>
             <ul className=" text-center pt-5 font-medium ">
                 {table.map((line, index) => (
-                    <li key={index} className="text-3xl">{line}</li>
+                    <li key={index} className="sm:text-3xl text-xl">{line}</li>
                 ))}
             </ul>
         </div>

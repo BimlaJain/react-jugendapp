@@ -20,12 +20,12 @@ const Loop = () => {
 
     return (
         <div>
-            <h2 className="text-center font-bold text-4xl text-black pt-10 pb-5">
+            <h2 className="text-center font-bold sm:text-4xl text-2xl text-black pt-10 pb-5">
                 Star using nested loop
             </h2>
             <div className="text-center">
                 {name.map((row, index) => (
-                    <p key={index} className="text-3xl">{row}</p>
+                    <p key={index} className="sm:text-3xl text-xl">{row}</p>
                 ))}
             </div>
         </div>
