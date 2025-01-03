@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 
 const Loop = () => {
@@ -11,17 +10,19 @@ const Loop = () => {
         for (let i = 0; i < rows; i++) {
             let row = "";
             for (let j = 0; j < cols; j++) {
-                row += "*"; 
+                row += "* "; 
             }
             result.push(row.trim()); 
         }
 
-        setName(result); 
-    }, []); 
+        setName(result);
+    }, []);
 
     return (
         <div>
-            <h2 className="text-center font-bold text-4xl text-black pt-10 pb-5">Star using nested loop</h2>
+            <h2 className="text-center font-bold text-4xl text-black pt-10 pb-5">
+                Star using nested loop
+            </h2>
             <div className="text-center">
                 {name.map((row, index) => (
                     <p key={index} className="text-3xl">{row}</p>
@@ -32,4 +33,3 @@ const Loop = () => {
 };
 
 export default Loop;
-
