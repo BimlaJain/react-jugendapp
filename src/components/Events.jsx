@@ -51,7 +51,7 @@ const FormValidation = () => {
     return (
         <div className="bg-offwhite lg:py-[60px] py-10">
             <div className="container">
-                <h1 className="font-bold text-4xl leading-custom-md text-naturalblack text-center pb-5">Event einsenden  </h1>
+                <h1 className="font-bold md:text-4xl text-3xl leading-custom-md text-naturalblack text-center pb-5">Event einsenden  </h1>
                 <p className="text-xl leading-custom-lg max-w-[768px] mx-auto text-center text-gray font-light pb-5 max-sm:text-base"> At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
                 <div className="max-w-[768px] mx-auto">
                     <form onSubmit={handleSubmit}>
