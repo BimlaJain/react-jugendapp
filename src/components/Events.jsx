@@ -85,7 +85,7 @@ const FormValidation = () => {
                             <input className="py-[17.5px] max-sm:py-3 pl-4 rounded-[30px] max-sm:w-full placeholder-gray border-lightgray border outline-none text-sm font-bold w-[50%]" type="text" required name="price" placeholder="Preis" value={formData.price} onChange={handleChange} />
                         </div>
                         <textarea className="w-full py-[55.5px] max-sm:pt-10 max-sm:pb-5 mb-5 leading-6 text-sm font-bold resize-none outline-none pl-4 rounded-[30px] border-lightgray border text-gray placeholder-gray" placeholder="Details zur Veranstaltung" name="details" required value={formData.details} onChange={handleChange} ></textarea>
-                        <button type="submit" className="py-4 px-[115px] max-sm:px-0 max-sm:w-full text-center rounded-[30px] mx-auto bg-custom-gradient sm:flex font-bold text-white" > Event einsenden </button>
+                        <button type="submit" className="py-4 px-[115px] max-sm:px-0 max-sm:w-full text-center rounded-[30px] mx-auto bg-custom-gradient sm:flex font-bold text-white hover:scale-100 transition-all duration-700 ease-in-out" > Event einsenden </button>
                     </form>
                 </div>
             </div>
