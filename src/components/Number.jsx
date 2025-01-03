@@ -13,8 +13,8 @@ const Number = () => {
 
     return (
         <div>
-            <h2 className="text-center font-bold text-4xl text-black">Add Two Numbers using Function</h2>
-            <p id="result" className='text-center font-medium text-3xl pt-10'>The sum is: {sum}</p>
+            <h2 className="text-center font-bold text-4xl text-black pt-10">Add Two Numbers using Function</h2>
+            <p id="result" className='text-center font-medium text-3xl pt-5'>The sum is: {sum}</p>
         </div>
     );
 };
