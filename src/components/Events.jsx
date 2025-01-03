@@ -63,7 +63,7 @@ const FormValidation = () => {
                             </button>
                             <input type="file" id="imageInput" accept="image/*" className="hidden" multiple onChange={handleImageChange} />
                         </div>
-                        <div className="flex p-4 rounded-[30px] border-lightgray border bg-white sm:mb-5 mb-3 relative">
+                        <div className="flex py-4 px-4 max-sm:py-3 rounded-[30px] border-lightgray border bg-white sm:mb-5 mb-3 relative">
                             <input className="w-full outline-none text-sm font-bold placeholder-gray" type="text" required name="category" placeholder="Kategorie" value={formData.category} onChange={handleChange} />
                             <img className="rounded-[20px] max-w-[96px] cursor-pointer" src="./assets/images/svg/arrow.svg" alt="dropdown arrow" onClick={toggleDropdown} />
                             {showDropdown && (
