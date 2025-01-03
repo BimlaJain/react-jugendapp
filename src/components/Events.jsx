@@ -63,7 +63,7 @@ const FormValidation = () => {
                             </button>
                             <input type="file" id="imageInput" accept="image/*" className="hidden" multiple onChange={handleImageChange} />
                         </div>
-                        <div className="flex p-4 rounded-[30px] border-lightgray border bg-white mb-5 relative">
+                        <div className="flex p-4 rounded-[30px] border-lightgray border bg-white sm:mb-5 mb-3 relative">
                             <input className="w-full outline-none text-sm font-bold placeholder-gray" type="text" required name="category" placeholder="Kategorie" value={formData.category} onChange={handleChange} />
                             <img className="rounded-[20px] max-w-[96px] cursor-pointer" src="./assets/images/svg/arrow.svg" alt="dropdown arrow" onClick={toggleDropdown} />
                             {showDropdown && (
@@ -76,13 +76,13 @@ const FormValidation = () => {
                                 </div>
                             )}
                         </div>
-                        <div className="sm:flex gap-5 mb-5">
-                            <input className="py-[17.5px] pl-4 max-sm:py-3 rounded-[30px] placeholder-gray border-lightgray border outline-none text-sm font-bold w-[50%] max-sm:mb-5" type="text" required name="title" placeholder="Titel" value={formData.title} onChange={handleChange} />
-                            <input className="py-[17.5px] pl-4 max-sm:py-3 rounded-[30px] placeholder-gray border-lightgray border outline-none text-sm font-bold w-[50%]" type="text" required name="date" placeholder="Datum" value={formData.date} onChange={handleChange} />
+                        <div className="sm:flex gap-5 sm:mb-5 mb-3">
+                            <input className="py-[17.5px] pl-4 max-sm:py-3 max-sm:w-full rounded-[30px] placeholder-gray border-lightgray border outline-none text-sm font-bold w-[50%] max-sm:mb-3" type="text" required name="title" placeholder="Titel" value={formData.title} onChange={handleChange} />
+                            <input className="py-[17.5px] pl-4 max-sm:py-3 rounded-[30px] max-sm:w-full placeholder-gray border-lightgray border outline-none text-sm font-bold w-[50%]" type="text" required name="date" placeholder="Datum" value={formData.date} onChange={handleChange} />
                         </div>
-                        <div className="sm:flex gap-5 pb-5">
-                            <input className="py-[17.5px] pl-4 max-sm:py-3 rounded-[30px] placeholder-gray border-lightgray border outline-none text-sm font-bold w-[50%] max-sm:mb-5" type="text" required name="location" placeholder="Standort" value={formData.location} onChange={handleChange} />
-                            <input className="py-[17.5px] max-sm:py-3 pl-4 rounded-[30px] placeholder-gray border-lightgray border outline-none text-sm font-bold w-[50%]" type="text" required name="price" placeholder="Preis" value={formData.price} onChange={handleChange} />
+                        <div className="sm:flex gap-5 sm:pb-5 pb-3">
+                            <input className="py-[17.5px] pl-4 max-sm:py-3 max-sm:w-full rounded-[30px] placeholder-gray border-lightgray border outline-none text-sm font-bold w-[50%] max-sm:mb-3" type="text" required name="location" placeholder="Standort" value={formData.location} onChange={handleChange} />
+                            <input className="py-[17.5px] max-sm:py-3 pl-4 rounded-[30px] max-sm:w-full placeholder-gray border-lightgray border outline-none text-sm font-bold w-[50%]" type="text" required name="price" placeholder="Preis" value={formData.price} onChange={handleChange} />
                         </div>
                         <textarea className="w-full py-[55.5px] max-sm:pt-10 max-sm:pb-5 mb-5 leading-6 text-sm font-bold resize-none outline-none pl-4 rounded-[30px] border-lightgray border text-gray placeholder-gray" placeholder="Details zur Veranstaltung" name="details" required value={formData.details} onChange={handleChange} ></textarea>
                         <button type="submit" className="py-4 px-[115px] max-sm:px-0 max-sm:w-full text-center rounded-[30px] mx-auto bg-custom-gradient sm:flex font-bold text-white" > Event einsenden </button>
