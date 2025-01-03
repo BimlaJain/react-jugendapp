@@ -50,7 +50,7 @@ const FormValidation = () => {
 
     return (
         <div className="bg-offwhite py-[60px] px-20 max-lg:px-6 max-sm:px-0">
-            <div className="container">
+            <div className="container max-sm:px-4">
                 <h1 className="font-bold text-4xl leading-custom-md text-naturalblack text-center pb-5">Event einsenden  </h1>
                 <p className="text-xl leading-custom-lg max-w-[768px] mx-auto text-center text-gray font-light pb-5 max-sm:text-base"> At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
                 <div className="max-w-[768px] mx-auto">
@@ -76,12 +76,12 @@ const FormValidation = () => {
                                 </div>
                             )}
                         </div>
-                        <div className="flex gap-5 mb-5">
-                            <input className="py-[17.5px] pl-4 max-sm:py-3 rounded-[30px] placeholder-gray border-lightgray border outline-none text-sm font-bold w-[50%]" type="text" required name="title" placeholder="Titel" value={formData.title} onChange={handleChange} />
+                        <div className="sm:flex gap-5 mb-5">
+                            <input className="py-[17.5px] pl-4 max-sm:py-3 rounded-[30px] placeholder-gray border-lightgray border outline-none text-sm font-bold w-[50%] max-sm:mb-5" type="text" required name="title" placeholder="Titel" value={formData.title} onChange={handleChange} />
                             <input className="py-[17.5px] pl-4 max-sm:py-3 rounded-[30px] placeholder-gray border-lightgray border outline-none text-sm font-bold w-[50%]" type="text" required name="date" placeholder="Datum" value={formData.date} onChange={handleChange} />
                         </div>
-                        <div className="flex gap-5 pb-5">
-                            <input className="py-[17.5px] pl-4 max-sm:py-3 rounded-[30px] placeholder-gray border-lightgray border outline-none text-sm font-bold w-[50%]" type="text" required name="location" placeholder="Standort" value={formData.location} onChange={handleChange} />
+                        <div className="sm:flex gap-5 pb-5">
+                            <input className="py-[17.5px] pl-4 max-sm:py-3 rounded-[30px] placeholder-gray border-lightgray border outline-none text-sm font-bold w-[50%] max-sm:mb-5" type="text" required name="location" placeholder="Standort" value={formData.location} onChange={handleChange} />
                             <input className="py-[17.5px] max-sm:py-3 pl-4 rounded-[30px] placeholder-gray border-lightgray border outline-none text-sm font-bold w-[50%]" type="text" required name="price" placeholder="Preis" value={formData.price} onChange={handleChange} />
                         </div>
                         <textarea className="w-full py-[55.5px] max-sm:pt-10 max-sm:pb-5 mb-5 leading-6 text-sm font-bold resize-none outline-none pl-4 rounded-[30px] border-lightgray border text-gray placeholder-gray" placeholder="Details zur Veranstaltung" name="details" required value={formData.details} onChange={handleChange} ></textarea>
