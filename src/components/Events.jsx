@@ -64,14 +64,14 @@ const FormValidation = () => {
                             <input type="file" id="imageInput" accept="image/*" className="hidden" multiple onChange={handleImageChange} />
                         </div>
                         <div className="flex py-4 px-4 max-sm:py-3 rounded-[30px] border-lightgray border bg-white sm:mb-5 mb-3 relative">
-                            <input className="w-full outline-none text-sm font-bold placeholder-gray" type="text" required name="category" placeholder="Kategorie" value={formData.category} onChange={handleChange} />
+                            <input className="w-full outline-none text-sm font-bold placeholder:text-gray text-gray" type="text" required name="category" placeholder="Kategorie" value={formData.category} onChange={handleChange} />
                             <img className="rounded-[20px] max-w-[96px] cursor-pointer" src="./assets/images/svg/arrow.svg" alt="dropdown arrow" onClick={toggleDropdown} />
                             {showDropdown && (
-                                <div className="absolute top-full right-0 placeholder-gray mt-2 w-48 bg-white border border-lightgray rounded-lg shadow-md">
+                                <div className="absolute top-full right-0 placeholder:text-gray mt-2 w-48 bg-white border border-lightgray rounded-lg shadow-md">
                                     <ul className="list-none p-2">
-                                        <li className="p-2 cursor-pointer" onClick={() => { setFormData({ ...formData, category: "Food" }); setShowDropdown(false); }}>Food </li>
-                                        <li className="p-2 cursor-pointer" onClick={() => { setFormData({ ...formData, category: "Travel" }); setShowDropdown(false); }} > Travel </li>
-                                        <li className="p-2 cursor-pointer" onClick={() => { setFormData({ ...formData, category: "Cloths" }); setShowDropdown(false); }} > Cloths </li>
+                                        <li className="p-2 cursor-pointer text-gray" onClick={() => { setFormData({ ...formData, category: "Food" }); setShowDropdown(false); }}>Food </li>
+                                        <li className="p-2 cursor-pointer text-gray" onClick={() => { setFormData({ ...formData, category: "Travel" }); setShowDropdown(false); }} > Travel </li>
+                                        <li className="p-2 cursor-pointer text-gray" onClick={() => { setFormData({ ...formData, category: "Cloths" }); setShowDropdown(false); }} > Cloths </li>
                                     </ul>
                                 </div>
                             )}
