@@ -63,7 +63,7 @@ const FormValidation = () => {
                 </p>
                 <div className="max-w-[768px] mx-auto">
                     <form onSubmit={handleSubmit}>
-                        <div className="border-dashed bg-white border-lightgray border-2 rounded-[30px] flex py-2 px-4 max-sm:px-[10px] max-sm:gap-3 gap-4 mb-5 max-w-[768px] mx-auto">
+                        <div className="border-dashed bg-white border-lightgray border rounded-[30px] flex py-2 px-4 max-sm:px-[10px] max-sm:gap-3 gap-4 mb-5 max-w-[768px] mx-auto">
                             {selectedImages.map((image, index) => (
                                 <img
                                     key={index}
