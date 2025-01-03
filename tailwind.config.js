@@ -5,6 +5,16 @@ module.exports = {
   ],
   theme: {
     extend: {
+      container: {
+        center: true,
+        padding: "20px",
+        screens: {
+          sm: "640px",
+          md: "768px",
+          lg: "1024px",
+          xl: "1140px",
+        },
+      },
       colors: {
         "offwhite": '#F5F9FC',
         "naturalblack": '#222222',
